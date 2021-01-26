@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="hubspot  test automation regression suite"
+	thread-count="3" parallel="tests" verbose="4">
+
+
+
+	<!-- <listeners> <listener class-name="com.qa.Listeners.ExtentReportListener" 
+		/> <listener class-name="com.qa.Listeners.ScreenshotListener" /> 
+		<listener class-name="com.qa.Listeners.PDFListener" /> <listener 
+		class-name="com.qa.Listeners.AllureReportListner" /> 
+		<listener class-name="com.qa.Listeners.TesultsListner" 
+		/> </listeners> -->
+
+	<test name="LoginTest">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.pageTest.LoginPageTest" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="HomePageTest">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.pageTest.HomePageTest" />
+		</classes>
+	</test> <!-- Test -->
+
+
+
+</suite> <!-- Suite -->

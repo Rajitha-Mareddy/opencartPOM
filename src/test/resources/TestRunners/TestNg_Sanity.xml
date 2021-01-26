@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="hubspot  test automation sanity suite"
+	 verbose="4">
+<listeners>
+		<listener
+			class-name="com.qa.Listners.ExtentReportListner" />
+		
+	</listeners>
+	<test name="LoginTest">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.pageTest.LoginPageTest" />
+		</classes>
+	</test> <!-- Test -->
+
+	<!-- <test name="HomePageTest">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.qa.pageTest.HomePageTest" />
+		</classes>
+	</test> Test -->
+
+
+
+</suite> <!-- Suite -->
