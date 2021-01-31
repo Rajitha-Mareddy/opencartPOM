@@ -131,9 +131,9 @@ public class ElementUtil {
 	return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
 	}
 	
-	public void getPageLinks(int time,By locator) {
-		waitforAllElementsVisibility(time, locator).stream().forEach(ele->System.out.println(ele.getText()));
-	}
+// 	public void getPageLinks(int time,By locator) {
+// 		waitforAllElementsVisibility(time, locator).stream().forEach(ele->System.out.println(ele.getText()));
+// 	}
 	public WebElement waitForElementPresent(By locator, int time) {
 		WebDriverWait wait = new WebDriverWait(driver, time);
 		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
